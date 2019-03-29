@@ -543,7 +543,7 @@ if __name__ == '__main__':
     use_glove = args.use_glove
     use_extra_feature = args.use_extra_feature
     options_file = 'data/elmo_2x4096_512_2048cnn_2xhighway_options.json'
-    weight_file = 'data/elmo_2x4096_512_2048cnn_2xhighway_weights'
+    weight_file = 'data/elmo_2x4096_512_2048cnn_2xhighway_weights.hdf5'
     glove_file = 'data/glove.840B.300d.txt'
     logger = config_logger('Preprocess')
 
