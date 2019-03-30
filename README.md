@@ -3,6 +3,8 @@ Implementation for NAACL-2019 paper
 
 **BAG: Bi-directional Attention Entity Graph Convolutional Network forMulti-hop Reasoning Question Answering**
 
+![BAG Framework](https://github.com/caoyu1991/BAG/blob/master/BAG.png)
+
 ## Requirement
 1. Python 3.6
 2. TensorFlow >= 1.11.0
