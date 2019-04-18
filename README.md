@@ -3,6 +3,8 @@ Implementation for NAACL-2019 paper
 
 **BAG: Bi-directional Attention Entity Graph Convolutional Network forMulti-hop Reasoning Question Answering**
 
+[paper link](http://arxiv.org/abs/1904.04969)
+
 ![BAG Framework](https://github.com/caoyu1991/BAG/blob/master/BAG.png)
 
 ## Requirement
