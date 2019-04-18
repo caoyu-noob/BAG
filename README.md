@@ -11,7 +11,7 @@ Implementation for NAACL-2019 paper
 1. Python 3.6
 2. TensorFlow >= 1.11.0
 3. Pytorch >= 0.4.1
-4. SpaCy >= 2.0.12 (You need to install "en" module via )
+4. SpaCy >= 2.0.12 (You need to install "en" module via "python -m spacy download en")
 5. allennlp >= 0.7.1
 6. nltk >= 3.3
 
