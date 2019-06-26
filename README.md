@@ -55,3 +55,18 @@ After training it will put trained model onto directory _/models_.
 You can predict the answer of a json file using following command 
 
 `python BAG.py {predict_json_file_name} {predict_json_file_name} --use_multi_gpu=true --evaluation_mode=true`
+
+- Trained model
+
+Anyone who needs the trained model in our submission can find it on the [Codalab](https://worksheets.codalab.org/bundles/0x26949d12bc5845c2a341b2ede40986f1)
+
+## Reference
+```
+@inproceedings{cao2019bag,
+  title={BAG: Bi-directional Attention Entity Graph Convolutional Network for Multi-hop Reasoning Question Answering},
+  author={Cao, Yu and Fang, Meng and Tao, Dacheng},
+  booktitle={Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)},
+  pages={357--362},
+  year={2019}
+}
+```
