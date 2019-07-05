@@ -60,6 +60,10 @@ You can predict the answer of a json file using following command
 
 Anyone who needs the trained model in our submission can find it on the [Codalab](https://worksheets.codalab.org/bundles/0x26949d12bc5845c2a341b2ede40986f1)
 
+## Acknowledgement
+
+We would like to appreciate Nicola De Cao [link](https://nicola-decao.github.io/) for his assistance in implementing this project.
+
 ## Reference
 ```
 @inproceedings{cao2019bag,
