@@ -25,7 +25,7 @@ default batch size 32, at least 16GB memory is needed.
 
 You need to download pretrained 840B 300d [GLoVe embeddings](http://nlp.stanford.edu/data/glove.840B.300d.zip), 
 and pretrained original size ELMo embedding [weights](https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x4096_512_2048cnn_2xhighway/elmo_2x4096_512_2048cnn_2xhighway_weights.hdf5)
- and [options](https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x1024_128_2048cnn_1xhighway/elmo_2x1024_128_2048cnn_1xhighway_options.json) and put them under directory _/data_. 
+ and [options](https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x4096_512_2048cnn_2xhighway/elmo_2x4096_512_2048cnn_2xhighway_options.json) and put them under directory _/data_. 
  
 - Preprocessing dataset
 
