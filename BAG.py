@@ -105,7 +105,7 @@ class Model:
         with tf.variable_scope('output_layer', reuse=tf.AUTO_REUSE):
             ## two layer FFN
             rawPredictions = tf.squeeze(tf.layers.dense(tf.layers.dense(
-                attentionFlowOutput, units=256, activation=tf.nn.tanh),  units=1), -1)
+                attentionFlowOutput, units=128, activation=tf.nn.tanh),  units=1), -1)
 
             predictions2 = bmask * tf.expand_dims(rawPredictions, 1)
             predictions2 = tf.where(tf.equal(predictions2, 0),
