@@ -104,8 +104,10 @@ class Model:
     def outputLayer(self, attentionFlowOutput, bmask):
         with tf.variable_scope('output_layer', reuse=tf.AUTO_REUSE):
             ## two layer FFN
+            ## The dimension of intermediate layer in following FFN is 128 for pre-trained model
+            ## You can try to use 256 because I found it has a better performance on dev ser.
             rawPredictions = tf.squeeze(tf.layers.dense(tf.layers.dense(
-                attentionFlowOutput, units=256, activation=tf.nn.tanh),  units=1), -1)
+                attentionFlowOutput, units=128, activation=tf.nn.tanh),  units=1), -1)
 
             predictions2 = bmask * tf.expand_dims(rawPredictions, 1)
             predictions2 = tf.where(tf.equal(predictions2, 0),
