@@ -15,6 +15,7 @@ We provided main entrance in both **_TensorFlow version_** (BAG.py) and **_PyTor
 4. SpaCy >= 2.0.12 (You need to install "en" module via "python -m spacy download en")
 5. allennlp >= 0.7.1
 6. nltk >= 3.3
+7. pytorch-ignite (if your need to run the script in PyTorch version)
 
 And some other packages
 
