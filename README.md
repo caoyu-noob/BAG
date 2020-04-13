@@ -8,9 +8,10 @@ Implementation for NAACL-2019 paper
 ![BAG Framework](https://github.com/caoyu1991/BAG/blob/master/BAG.png)
 
 ## Requirement
+We provided main entrance in both **_TensorFlow version_** (BAG.py) and **_PyTorch version_** (BAG-pytorch.py)
 1. Python 3.6
-2. TensorFlow == 1.11.0 (We are not sure if it works at higher version)
-3. Pytorch >= 0.4.1
+2. TensorFlow == 1.11.0 (if you want to run TF version script, We are not sure if it works at higher version)
+3. Pytorch >= 1.1.0
 4. SpaCy >= 2.0.12 (You need to install "en" module via "python -m spacy download en")
 5. allennlp >= 0.7.1
 6. nltk >= 3.3
@@ -18,7 +19,8 @@ Implementation for NAACL-2019 paper
 And some other packages
 
 I run it using two NVIDIA GTX1080Ti GPUs each one has 11GB memory. To run it with 
-default batch size 32, at least 16GB memory is needed.
+default batch size 32, at least 16GB GPU memory is needed. To run the preprocessing
+procedure on the whole dataset, at least 50GB system memory is needed.
 
 ## How to run
 - Before run
@@ -44,6 +46,11 @@ in original paper
 
 `python BAG.py {train_json_file_name} {dev_json_file_name} --use_multi_gpu=true`
 
+or in pytorch version (we do not provide multi-gpu support yet for pytorch, the most simple way is wrapping model with 
+nn.DataParallel)
+
+`python BAG-pytorch.py {train_json_file_name} {dev_json_file_name}`
+
 Please make sure you have run preprocessing for both train file and dev
 file before training. And please make sure you have CUDA0 and CUDA1 available.
 If you have single GPU with more than 16GB memory, you can remove parameter 
@@ -58,7 +65,7 @@ You can predict the answer of a json file using following command
 
 - Trained model
 
-Anyone who needs the trained model in our submission can find it on the [Codalab](https://worksheets.codalab.org/bundles/0x26949d12bc5845c2a341b2ede40986f1)
+Anyone who needs the trained model in our submission can find it on the [Codalab](https://worksheets.codalab.org/bundles/0x26949d12bc5845c2a341b2ede40986f1) (Only TF version is available)
 
 ## Acknowledgement
 
